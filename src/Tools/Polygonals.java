@@ -1,5 +1,5 @@
 package Tools;
-public class PolygonalNumbers {
+public class Polygonals {
     /** Implements methods for calculating polygonal numbers and checking numbers for being specific polygonals*/
 
     public static int getPolygonal(int s, int n){
