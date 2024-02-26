@@ -2,7 +2,7 @@ package Tools;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class PolygonalNumbersTest {
+class PolygonalsTest {
     @Test
     void generateSomePolygonalNumbers() {
         Assertions.assertEquals(Polygonals.getPolygonal(2,10), 10);
@@ -16,6 +16,7 @@ class PolygonalNumbersTest {
         Assertions.assertTrue(Polygonals.checkPolygonal(2,10));
         Assertions.assertTrue(Polygonals.checkPolygonal(3, 28));
         Assertions.assertTrue(Polygonals.checkPolygonal(4, 100));
+        Assertions.assertTrue(Polygonals.checkPolygonal(5, 145));
         Assertions.assertTrue(Polygonals.checkPolygonal(8, 176));
     }
 
@@ -24,6 +25,7 @@ class PolygonalNumbersTest {
         //leaving out s=2, because the line segment case is positive for every integer
         Assertions.assertFalse(Polygonals.checkPolygonal(3, 27));
         Assertions.assertFalse(Polygonals.checkPolygonal(4, 101));
+        Assertions.assertFalse(Polygonals.checkPolygonal(5, 101));
         Assertions.assertFalse(Polygonals.checkPolygonal(8, 175));
     }
 
